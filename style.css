@@ -4,12 +4,64 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 header,
 footer{
     background-color: lightgrey;
     padding: 5%;
 }
 
+h1, h2, h3, p{
+    margin-bottom: 1rem;
+}
+
 section{
     padding: 5%;
 }
+
+span{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8rem;
+}
+
+.padded{ padding: 5%;}
+.card{
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.card:hover{
+    box-shadow:
+  24px 23px 21px -10px rgba(0, 0, 0, 0.79)
+;
+}
+
+.bg-image{
+    background-color: beige;
+    background-image: url(https://source.unsplash.com/eU4pipU_8HA);
+    background-position: center;
+    background-repeat: no repeat;
+    border-radius: 1rem;
+    background-size: 130%;
+    padding-bottom: 75%;
+}
+
+.post-info{
+    font-size: 1.1;
+    padding: 1rem 0;
+}
+
+
+
+
+

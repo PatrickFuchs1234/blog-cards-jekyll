@@ -1,9 +1,39 @@
 ---
 layout: default
 title: Home
+blogpost:
+ - title: Delhi 
+   description: The Indian adventure is a Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   category: South Asia, Indien
+   date: 01.Sep.23
+   url: https://onememorypermile.com/reisetagebuch/neudehli
+ - title: Udaipur 
+   description: The Indian adventure is a Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   category: South Asia, Indien
+   date: 08.Sep.23
+   url: https://onememorypermile.com/reisetagebuch/neudehli
+ - title: Mumbai 
+   description: The Indian adventure is a Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   category: South Asia, Indien
+   date: 10.Sep.23
+   url: https://onememorypermile.com/reisetagebuch/neudehli
 ---
 
-<section>
-    <h1>Welcome to your homepage!</h1>
-    this is a section in the hompage layout
+<section class="grid-spaceAround">
+
+    {% for item in page.blogpost %}
+    <div class="col-4 padded">
+    <div class="card">
+        <div class="bg-image padded">
+            <span> {{item.category}} </span> 
+        </div>
+        <div class="post-info">
+            <p class="date"> {{item.date}} </p>
+            <h3> {{item.title}} </h3>
+            <p> {{item.description}} </p>
+            <a href="{{item.url}}"> Find out more &nbsp; &#10141;</a>
+        </div>
+    </div>
+    </div>
+    {% endfor %}
 </section>
